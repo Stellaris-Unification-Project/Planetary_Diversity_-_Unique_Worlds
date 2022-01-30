@@ -66,8 +66,8 @@ origin_techno_world = {
 			NOR = {
 				value = civic_fanatic_purifiers
 				value = civic_barbaric_despoilers
+				value = civic_hive_devouring_swarm
 			}
-			NOT = { value = civic_hive_devouring_swarm }
 		}
 	}
 	flags = { custom_start_screen }
@@ -88,12 +88,10 @@ origin_archive_world = {
 			NOR = {
 				value = civic_fanatic_purifiers
 				value = civic_barbaric_despoilers
-			}
-			NOR = {
 				value = civic_machine_terminator
 				value = civic_machine_servitor
+				value = civic_machine_assimilator
 			}
-			NOT = { value = civic_machine_assimilator }
 		}
 	}
 	initializers = { pd_origin_init_archive }
