@@ -63,8 +63,10 @@ origin_techno_world = {
 	possible = { 
 		authority = { NOT = { value = auth_machine_intelligence } } 
 		civics = { 
-			NOT = { value = civic_fanatic_purifiers } 
-			NOT = { value = civic_barbaric_despoilers }
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_barbaric_despoilers
+			}
 			NOT = { value = civic_hive_devouring_swarm }
 		}
 	}
@@ -83,10 +85,14 @@ origin_archive_world = {
 	possible = { 
 		authority = { NOT = { value = auth_hive_mind } } 
 		civics = { 
-			NOT = { value = civic_fanatic_purifiers } 
-			NOT = { value = civic_barbaric_despoilers }
-			NOT = { value = civic_machine_terminator }
-			NOT = { value = civic_machine_servitor }
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_barbaric_despoilers
+			}
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_servitor
+			}
 			NOT = { value = civic_machine_assimilator }
 		}
 	}
@@ -107,8 +113,10 @@ origin_crucible_world = {
 	flags = { custom_start_screen }
 	possible = { 
 		authority = { 
-			NOT = { value = auth_machine_intelligence } 
-			NOT = { value = auth_hive_mind } 
+			NOR = {
+				value = auth_machine_intelligence
+				value = auth_hive_mind
+			} 
 		} 
 		
 	}
